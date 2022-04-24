@@ -1,6 +1,5 @@
 import numpy as np
 
-
 def sigmoid(x):
   return 1 / (1 + np.exp(-x))
 
@@ -208,8 +207,6 @@ network = NeuNet()
 network.train(data, y_trues)
 
 
-year_1 = np.array([16, 60, 9,5]) 
-year_2 = np.array([90, 0, 70, 90])  
+year_1 = np.array([16, 60, 9,5])
 
 print(network.feedforward(year_1)) 
-print(network.feedforward(year_2)) 
